@@ -7,7 +7,7 @@ $('#add_Component').submit(function(event){
 $('#search-button').click(function() {
     var name = $('#search-input').val()
     if(name){
-        window.location.href = `http://localhost:3000/api/getComponent/${name}`
+        window.location.href = `/api/getComponent/${name}`
     }
     
 })
