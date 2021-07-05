@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Components reuse App</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
     <!--Adding bootsrap Lib-->
     
@@ -22,14 +22,21 @@
     <main id ="site-main">
         <div class="container">
 
-            <h4 class="" style="margin-top: 5%;">Reuse Components</h4>
+            <h5 class="" style="margin-top: 2%;">Reuse Components</h5>
             <p>Search the name of component and reuse it in code</p>  
             <hr style="color: #d4d4d4;">
-            <!--include SearchBar-->
+
+            <div >
+                <!--include SearchBar-->
             <%-include('includes/_searchBar')%>
             <!--/include SearchBar-->
             
             <a href="/addComponent" class="btn" style="border-color: black;border-radius: 0%;width: fit-content;"> + Add Component</a>         
+            </div>
+            
+            <!--include Table-->
+            <%-include('includes/_userTable')%>
+            <!--/include Table-->
 
         </div>
     </main>
