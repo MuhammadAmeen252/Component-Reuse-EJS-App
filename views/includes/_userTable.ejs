@@ -1,0 +1,25 @@
+<table class="table table-striped mt-2">
+    <thead>
+      <tr>
+        <th>Sr#</th>
+        <th>Name</th>
+        <th>Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% for (var i=0; i < components.length; i++) { %>
+      <tr>
+        <td><strong><%= i+1 %></strong></td>
+        <td><%= components[i].name %></td>
+        <td><%= components[i].code %></td> 
+        <td>
+          <a href="/updateComponent?id=<%= components[i]._id %>" class="edit" title="Edit" data-toggle="tooltip">
+            <i class="fas fa-edit ml-2"></i></a>
+          <!-- <a data-id="<%= components[i]._id %>"  class="delete ml-4"  title="Delete" >
+            <i class="fas fa-trash-alt"></i></a> -->
+        </td>
+      </tr>
+      <% } %>
+      
+</tbody>
+</table>
