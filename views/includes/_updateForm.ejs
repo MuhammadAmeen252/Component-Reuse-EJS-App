@@ -1,0 +1,21 @@
+
+                <div class="form-content">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <strong>Name</strong><br>
+                                <input type="hidden" name="id" class="form-control"  value="<%= component._id %>"/>
+                                <!-- <%console.log(component)%> -->
+                                <input type="text" name="name" class="form-control" value="<%= component.name%>" required/>
+                            </div>
+                            <div class="form-group mt-2">
+                                <strong>Code</strong><br>
+                                <textarea rows = "5" name="code" class="form-control" value="" required>
+                                    <%= component.code%>
+                                </textarea>
+                            </div>
+                            
+                        </div>           
+                    </div>
+            <button type="submit" class="btnSubmit mt-2">Submit</button>
+    </div>
